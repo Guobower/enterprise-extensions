@@ -15,7 +15,7 @@
                 <attribute name="attrs"></attribute>
             </field>
 
-            
+
             <!-- TODO remove on v11. Odoo lo hace invisible si no esta seteado, ya fuer arreglado en v11 -->
             <field name="payment_term_id" position="attributes">
                 <attribute name="attrs"></attribute>
@@ -26,7 +26,7 @@
             </button>
 
             <button name="invoice_print" position="after">
-                <button name="invoice_print" string="Print" type="object" states="paid" groups="base.group_user"/>
+                <button name="invoice_print" string="Print" type="object" states="proforma,proforma2,paid" groups="base.group_user"/>
             </button>
         </field>
     </record>
@@ -45,7 +45,7 @@
             <field name="origin" position="attributes">
                 <attribute name="attrs"></attribute>
             </field>
-            
+
             <!-- TODO remove on v11. Odoo lo hace invisible si no esta seteado, ya fuer arreglado en v11 -->
             <field name="payment_term_id" position="attributes">
                 <attribute name="attrs"></attribute>

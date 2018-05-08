@@ -58,6 +58,11 @@ class AdhocModuleCategory(models.Model):
         readonly=False,
     )
 
+    _sql_constraints = [
+        ('code_uniq', 'unique(code)',
+            'Category code must be unique'),
+    ]
+
     @api.one
     @api.constrains('child_ids', 'name', 'parent_id')
     def set_code(self):

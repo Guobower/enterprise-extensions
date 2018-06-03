@@ -40,6 +40,7 @@
         "account_payment_group",
     ],
     'data': [
+        'security/account_usability_security.xml',
         'views/account_journal_view.xml',
         'views/account_payment_term_view.xml',
         'views/payment_acquirer_view.xml',

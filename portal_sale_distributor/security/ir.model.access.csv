@@ -22,3 +22,4 @@ access_product_price_history_distributor,product.price.history.portal.distributo
 access_fiscal_position_distributor,account.fiscal.position.distributor,account.model_account_fiscal_position_tax,group_portal_distributor,1,0,0,0
 access_delivery_carrier_distributor,delivery.carrier.distributor,delivery.model_delivery_carrier,group_portal_distributor,1,0,0,0
 access_delivery_carrier_price_rule_distributor,delivery.carrier.price.rule.distributor,delivery.model_delivery_price_rule,group_portal_distributor,1,0,0,0
+access_product_uom_categ_distributor,product.uom.categ.portal.distributor,product.model_product_uom_categ,group_portal_distributor,1,0,0,0

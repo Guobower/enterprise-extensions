@@ -105,7 +105,7 @@ class AccountMoveLine(models.Model):
         exchange_rate_entries.button_cancel()
         # exchange_rate_entries.line_ids.remove_move_reconcile()
         rate_rec_move_ids = self.env['account.partial.reconcile']
-        for account_move_line in exchange_rate_entries.line_ids:
+        for account_move_line in exchange_rate_entries.mapped('line_ids'):
             rate_rec_move_ids += account_move_line.matched_debit_ids
             rate_rec_move_ids += account_move_line.matched_credit_ids
         rate_rec_move_ids.unlink()
